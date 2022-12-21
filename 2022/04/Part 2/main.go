@@ -3,10 +3,11 @@ package main
 import (
 	"bufio"
 	"fmt"
-	helpers "github.com/maxpowerfreak/advent-of-code"
 	"math"
 	"strconv"
 	"strings"
+
+	helpers "github.com/maxpowerfreak/advent-of-code"
 )
 
 type pair struct {

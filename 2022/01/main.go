@@ -3,8 +3,9 @@ package main
 import (
 	"bufio"
 	"fmt"
-	helpers "github.com/maxpowerfreak/advent-of-code"
 	"strconv"
+
+	helpers "github.com/maxpowerfreak/advent-of-code"
 )
 
 func main() {

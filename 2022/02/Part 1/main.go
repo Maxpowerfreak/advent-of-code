@@ -3,8 +3,9 @@ package main
 import (
 	"bufio"
 	"fmt"
-	helpers "github.com/maxpowerfreak/advent-of-code"
 	"strings"
+
+	helpers "github.com/maxpowerfreak/advent-of-code"
 )
 
 const rock = "rock"

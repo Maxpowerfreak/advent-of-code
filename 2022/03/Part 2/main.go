@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+
 	helpers "github.com/maxpowerfreak/advent-of-code"
 )
 
