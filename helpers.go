@@ -30,7 +30,11 @@ func GetInputResponseBody(year, day int) (io.ReadCloser, error) {
 func readCookie() (string, error) {
 	data, err := os.ReadFile("cookie")
 	if err != nil {
-		return "", fmt.Errorf("unable to read cookie file: %x", err)
+		// vsc debugger quick hack
+		data, err = os.ReadFile("../../../cookie")
+		if err != nil {
+			return "", fmt.Errorf("unable to read cookie file: %x", err)
+		}
 	}
 
 	return string(data), nil
