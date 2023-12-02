@@ -33,7 +33,11 @@ func readCookie() (string, error) {
 		// vsc debugger quick hack
 		data, err = os.ReadFile("../../../cookie")
 		if err != nil {
-			return "", fmt.Errorf("unable to read cookie file: %x", err)
+			// hacky once more, but we might not be in Part1/2 so check one level above
+			data, err = os.ReadFile("../../cookie")
+			if err != nil {
+				return "", fmt.Errorf("unable to read cookie file: %x", err)
+			}
 		}
 	}
 
