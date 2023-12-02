@@ -24,13 +24,10 @@ type Color struct {
 
 // Game represents a game and it's highest number of seen cubes of a given color
 type Game struct {
-	Id       int
-	Red      Color
-	Green    Color
-	Blue     Color
-	MinRed   Color
-	MinGreen Color
-	MinBlue  Color
+	Id    int
+	Red   Color
+	Green Color
+	Blue  Color
 }
 
 func (g *Game) Compare(red, green, blue Color) {
